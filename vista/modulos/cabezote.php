@@ -1,0 +1,222 @@
+<?php
+    /*$paises = ControladorCovid::ctrInformacionPaises();
+
+    var_dump($paises);*/
+?>
+
+<div class="backwg">
+    <h1>
+        W | G
+    </h1>
+</div>
+
+<div class="cbp">
+
+    <form method="GET" id="cbpform" class="cbpform">
+        <select id="select" name="select" onchange="ShowSelected();">
+            <option><a href="#">Selecciona un pais</a></option>
+            <option><a href="#">Mapa mundial</a></option>
+            <option><a href="#">Afganistán</a></option>
+            <option><a href="#">Albania</a></option>
+            <option><a href="#">Alemania</a></option>
+            <option><a href="#">Andorra</a></option>
+            <option><a href="#">Angola</a></option>
+            <option><a href="#">Antigua y Barbuda</a></option>
+            <option><a href="#">Arabia Saudita</a></option>
+            <option><a href="#">Argelia</a></option>
+            <option><a href="#">Argentina</a></option>
+            <option><a href="#">Armenia</a></option>
+            <option><a href="#">Australia</a></option>
+            <option><a href="#">Austria</a></option>
+            <option><a href="#">Azerbaiyán</a></option>
+            <option><a href="#">Bahamas</a></option>
+            <option><a href="#">Bangladés</a></option>
+            <option><a href="#">Barbados</a></option>
+            <option><a href="#">Baréin</a></option>
+            <option><a href="#">Bélgica</a></option>
+            <option><a href="#">Belice</a></option>
+            <option><a href="#">Benín</a></option>
+            <option><a href="#">Bielorrusia</a></option>
+            <option><a href="#">Birmania / Myanmar</a></option>
+            <option><a href="#">Bolivia</a></option>
+            <option><a href="#">Bosnia y Herzegovina</a></option>
+            <option><a href="#">Botsuana</a></option>
+            <option><a href="#">Brasil</a></option>
+            <option><a href="#">Brunéi</a></option>
+            <option><a href="#">Bulgaria</a></option>
+            <option><a href="#">Burkina Faso</a></option>
+            <option><a href="#">Burundi</a></option>
+            <option><a href="#">Bután</a></option>
+            <option><a href="#">Cabo Verde</a></option>
+            <option><a href="#">Camboya</a></option>
+            <option><a href="#">Camerún</a></option>
+            <option><a href="#">Canadá</a></option>
+            <option><a href="#">Catar</a></option>
+            <option><a href="#">Chad</a></option>
+            <option><a href="#">Chile</a></option>
+            <option><a href="#">China</a></option>
+            <option><a href="#">Chipre</a></option>
+            <option><a href="#">Ciudad del Vaticano</a></option>
+            <option><a href="#">Colombia</a></option>
+            <option><a href="#">Comoras</a></option>
+            <option><a href="#">Corea del Norte</a></option>
+            <option><a href="#">Corea del Sur</a></option>
+            <option><a href="#">Costa de Marfil</a></option>
+            <option><a href="#">Costa Rica</a></option>
+            <option><a href="#">Croacia</a></option>
+            <option><a href="#">Cuba</a></option>
+            <option><a href="#">Dinamarca</a></option>
+            <option><a href="#">Dominica</a></option>
+            <option><a href="#">Ecuador</a></option>
+            <option><a href="#">Egipto</a></option>
+            <option><a href="#">El Salvador</a></option>
+            <option><a href="#">Emiratos Árabes Unidos</a></option>
+            <option><a href="#">Eritrea</a></option>
+            <option><a href="#">Eslovaquia</a></option>
+            <option><a href="#">Eslovenia</a></option>
+            <option><a href="#">España</a></option>
+            <option><a href="#">Estados Unidos</a></option>
+            <option><a href="#">Estonia</a></option>
+            <option><a href="#">Etiopía</a></option>
+            <option><a href="#">Filipinas</a></option>
+            <option><a href="#">Finlandia</a></option>
+            <option><a href="#">Fiyi</a></option>
+            <option><a href="#">Francia</a></option>
+            <option><a href="#">Gabón</a></option>
+            <option><a href="#">Gambia</a></option>
+            <option><a href="#">Georgia</a></option>
+            <option><a href="#">Ghana</a></option>
+            <option><a href="#">Granada</a></option>
+            <option><a href="#">Grecia</a></option>
+            <option><a href="#">Guatemala</a></option>
+            <option><a href="#">Guinea Ecuatorial</a></option>
+            <option><a href="#">Guinea</a></option>
+            <option><a href="#">Guinea-Bisáu</a></option>
+            <option><a href="#">Guyana</a></option>
+            <option><a href="#">Haití</a></option>
+            <option><a href="#">Honduras</a></option>
+            <option><a href="#">Hungría</a></option>
+            <option><a href="#">India</a></option>
+            <option><a href="#">Indonesia</a></option>
+            <option><a href="#">Irak</a></option>
+            <option><a href="#">Irán</a></option>
+            <option><a href="#">Irlanda</a></option>
+            <option><a href="#">Islandia</a></option>
+            <option><a href="#">Islas Marshall</a></option>
+            <option><a href="#">Islas Salomón</a></option>
+            <option><a href="#">Israel</a></option>
+            <option><a href="#">Italia</a></option>
+            <option><a href="#">Jamaica</a></option>
+            <option><a href="#">Japón</a></option>
+            <option><a href="#">Jordania</a></option>
+            <option><a href="#">Kazajistán</a></option>
+            <option><a href="#">Kenia</a></option>
+            <option><a href="#">Kirguistán</a></option>
+            <option><a href="#">Kiribati</a></option>
+            <option><a href="#">Kuwait</a></option>
+            <option><a href="#">Laos</a></option>
+            <option><a href="#">Lesoto</a></option>
+            <option><a href="#">Letonia</a></option>
+            <option><a href="#">Líbano</a></option>
+            <option><a href="#">Liberia</a></option>
+            <option><a href="#">Libia</a></option>
+            <option><a href="#">Liechtenstein</a></option>
+            <option><a href="#">Lituania</a></option>
+            <option><a href="#">Luxemburgo</a></option>
+            <option><a href="#">Macedonia del Norte</a></option>
+            <option><a href="#">Madagascar</a></option>
+            <option><a href="#">Malasia</a></option>
+            <option><a href="#">Malaui</a></option>
+            <option><a href="#">Maldivas</a></option>
+            <option><a href="#">Malí o Mali</a></option>
+            <option><a href="#">Malta</a></option>
+            <option><a href="#">Marruecos</a></option>
+            <option><a href="#">Mauricio</a></option>
+            <option><a href="#">Mauritania</a></option>
+            <option><a href="#">México</a></option>
+            <option><a href="#">Micronesia</a></option>
+            <option><a href="#">Moldavia</a></option>
+            <option><a href="#">Mónaco</a></option>
+            <option><a href="#">Mongolia</a></option>
+            <option><a href="#">Montenegro</a></option>
+            <option><a href="#">Mozambique</a></option>
+            <option><a href="#">Namibia</a></option>
+            <option><a href="#">Nauru</a></option>
+            <option><a href="#">Nepal</a></option>
+            <option><a href="#">Nicaragua</a></option>
+            <option><a href="#">Níger</a></option>
+            <option><a href="#">Nigeria</a></option>
+            <option><a href="#">Noruega</a></option>
+            <option><a href="#">Nueva Zelanda</a></option>
+            <option><a href="#">Omán</a></option>
+            <option><a href="#">Países Bajos</a></option>
+            <option><a href="#">Pakistán</a></option>
+            <option><a href="#">Palaos</a></option>
+            <option><a href="#">Panamá</a></option>
+            <option><a href="#">Papúa Nueva Guinea</a></option>
+            <option><a href="#">Paraguay</a></option>
+            <option><a href="#">Perú</a></option>
+            <option><a href="#">Polonia</a></option>
+            <option><a href="#">Portugal</a></option>
+            <option><a href="#">Reino Unido</a></option>
+            <option><a href="#">República Centroafricana</a></option>
+            <option><a href="#">República Checa</a></option>
+            <option><a href="#">República del Congo</a></option>
+            <option><a href="#">República Democrática del Congo</a></option>
+            <option><a href="#">República Dominicana</a></option>
+            <option><a href="#">Ruanda</a></option>
+            <option><a href="#">Rumanía</a></option>
+            <option><a href="#">Rusia</a></option>
+            <option><a href="#">Samoa</a></option>
+            <option><a href="#">San Cristóbal y Nieves</a></option>
+            <option><a href="#">San Marino</a></option>
+            <option><a href="#">San Vicente y las Granadinas</a></option>
+            <option><a href="#">Santa Lucía</a></option>
+            <option><a href="#">Santo Tomé y Príncipe</a></option>
+            <option><a href="#">Senegal</a></option>
+            <option><a href="#">Serbia</a></option>
+            <option><a href="#">Seychelles</a></option>
+            <option><a href="#">Sierra Leona</a></option>
+            <option><a href="#">Singapur</a></option>
+            <option><a href="#">Siria</a></option>
+            <option><a href="#">Somalia</a></option>
+            <option><a href="#">Sri Lanka</a></option>
+            <option><a href="#">Suazilandia</a></option>
+            <option><a href="#">Sudáfrica</a></option>
+            <option><a href="#">Sudán del Sur</a></option>
+            <option><a href="#">Sudán</a></option>
+            <option><a href="#">Suecia</a></option>
+            <option><a href="#">Suiza</a></option>
+            <option><a href="#">Surinam</a></option>
+            <option><a href="#">Tailandia</a></option>
+            <option><a href="#">Tanzania</a></option>
+            <option><a href="#">Tayikistán</a></option>
+            <option><a href="#">Timor Oriental</a></option>
+            <option><a href="#">Togo</a></option>
+            <option><a href="#">Tonga</a></option>
+            <option><a href="#">Trinidad y Tobago</a></option>
+            <option><a href="#">Túnez</a></option>
+            <option><a href="#">Turkmenistán</a></option>
+            <option><a href="#">Turquía</a></option>
+            <option><a href="#">Tuvalu</a></option>
+            <option><a href="#">Ucrania</a></option>
+            <option><a href="#">Uganda</a></option>
+            <option><a href="#">Uruguay</a></option>
+            <option><a href="#">Uzbekistán</a></option>
+            <option><a href="#">Vanuatu</a></option>
+            <option><a href="#">Venezuela</a></option>
+            <option><a href="#">Vietnam</a></option>
+            <option><a href="#">Yemen</a></option>
+            <option><a href="#">Yibuti</a></option>
+            <option><a href="#">Zambia</a></option>
+            <option><a href="#">Zimbabue</a></option>
+        </select>
+    </form>
+    
+</div>
+
+<div class="cbe">
+    
+</div>
+
+<div class="cbc"></div>

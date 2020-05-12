@@ -1,0 +1,45 @@
+.facebook{
+    position: absolute;
+    text-align: center;
+    font-size: 80%;
+    top: 93%;
+    left: 2%;
+    -moz-border-radius: 100%;
+     -webkit-border-radius: 100%;
+     border-radius: 100%;
+    color: #ffffff;
+    width: 1.5%;
+    padding-top: .2vh;
+    padding-bottom: .2vh;
+    padding-left: .2vh;
+    padding-right: .2vh;
+}
+
+.facebook a i{
+    color: #ffffff;
+    font-weight: 1;
+    font-size: auto;
+}
+
+.instagram{
+    position: absolute;
+    text-align: center;
+    font-size: 80%;
+    top: 93%;
+    left: 5%;
+    -moz-border-radius: 100%;
+     -webkit-border-radius: 100%;
+     border-radius: 100%;
+    color: #ffffff;
+    width: 1.5%;
+    padding-top: .2vh;
+    padding-bottom: .2vh;
+    padding-left: .4vh;
+    padding-right: .0vh;
+}
+
+.instagram a i{
+    color: #ffffff;
+    font-weight: 1;
+    font-size: auto;
+}
